@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="js no-touch draganddrop cssanimations fontface video inlinesvg no-overflowscrolling cssvhunit cssvmaxunit cssvminunit cssvwunit fileinput wf-proximanova-n7-active wf-proximanova-i4-active wf-fftisawebpro-n7-active wf-fftisawebpro-n4-active wf-fftisawebpro-i4-active wf-proximanova-i7-active wf-proximanova-n4-active wf-fftisawebpro-i7-active wf-adellesans-n7-active wf-adellesans-i7-active wf-adellesans-n4-active wf-adellesans-i4-active wf-active" style="" lang="en"><head>
+
+<title>Crear archivos en CMD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+<link rel="icon" href="https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/favicon.png?v=3a43e0f358075f9c79f8e1c10d6e737a">
+<link rel="apple-touch-icon" sizes="57x57" href="https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/apple-icon-57x57.png?v=a75d85bb1d6bb65c3b5f0f0ca760f365">
+<link rel="apple-touch-icon" sizes="72x72" href="https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/apple-icon-72x72.png?v=538cb15ac72dff614cee6f7f7e67741a">
+<link rel="apple-touch-icon" sizes="114x114" href="https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/apple-icon-114x114.png?v=e0a42f16853a5283d85455fe5750d28f">
+<link rel="apple-touch-icon" sizes="144x144" href="https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/apple-icon-144x144.png?v=eb55ac301a2b197f5af3f17e39ad2dd7">
+<meta property="og:description" content="A simple tool for saving web pages to read later on your iPhone, iPad, Android, computer, or Kindle.">
+<meta property="og:image" content="http://www.instapaper.com/static/img/insta_logo_large.png">
+<!--[if lt IE 9]>
+<script nonce=qNQJnVFVaz src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script async="" src="Crear%20archivos%20en%20CMD_files/google-analytics.js"></script><script nonce="" type="text/javascript" src="Crear%20archivos%20en%20CMD_files/dkx1mpq.js"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-ff-tisa-web-pro{font-family:"ff-tisa-web-pro",serif;}.tk-adelle-sans{font-family:"adelle-sans",sans-serif;}</style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-tisa-web-pro;src:url(https://use.typekit.net/af/61961a/00000000000000000001707c/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/61961a/00000000000000000001707c/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/61961a/00000000000000000001707c/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-tisa-web-pro;src:url(https://use.typekit.net/af/a06743/00000000000000000001707d/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/a06743/00000000000000000001707d/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/a06743/00000000000000000001707d/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-tisa-web-pro;src:url(https://use.typekit.net/af/6a3278/000000000000000000017080/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6a3278/000000000000000000017080/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6a3278/000000000000000000017080/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-tisa-web-pro;src:url(https://use.typekit.net/af/d3823a/000000000000000000017087/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/d3823a/000000000000000000017087/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/d3823a/000000000000000000017087/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:adelle-sans;src:url(https://use.typekit.net/af/9f2f2a/00000000000000003b9acf30/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9f2f2a/00000000000000003b9acf30/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9f2f2a/00000000000000003b9acf30/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:adelle-sans;src:url(https://use.typekit.net/af/bcee4d/00000000000000003b9acf2f/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/bcee4d/00000000000000003b9acf2f/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/bcee4d/00000000000000003b9acf2f/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:adelle-sans;src:url(https://use.typekit.net/af/708bdf/00000000000000003b9acf2e/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/708bdf/00000000000000003b9acf2e/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/708bdf/00000000000000003b9acf2e/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:adelle-sans;src:url(https://use.typekit.net/af/03e1a3/00000000000000003b9acf2d/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/03e1a3/00000000000000003b9acf2d/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/03e1a3/00000000000000003b9acf2d/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style><script nonce="" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" href="Crear%20archivos%20en%20CMD_files/bigfoot.min.css">
+<link rel="stylesheet" href="Crear%20archivos%20en%20CMD_files/read.min.css">
+<script nonce="" type="text/javascript" src="Crear%20archivos%20en%20CMD_files/vendor.min.js"></script>
+<script nonce="" type="text/javascript" src="Crear%20archivos%20en%20CMD_files/read.min.js"></script>
+<!--[if lt IE 9]>
+<style type="text/css">
+/* this is how I solve old-IE problems and nobody seems to mind */
+#control_bar_container { display: none; }
+</style>
+<![endif]-->
+<style type="text/css">
+#titlebar {
+direction: ltr;
+}
+#story {
+direction: ltr;
+}
+#footer {
+direction: ltr;
+}
+</style>
+</head>
+<body class="size3mode lightmode medwidthmode lyon_mode" data-sizemode="3">
+<div class="hidden" id="reflow" style="display: block;"></div>
+<div class="evernote_confirm">Successfully posted to Evernote</div>
+<div class="page_header_read">
+<div class="container-fluid">
+
+
+<nav id="control_bar" class="control_bar reveal">
+
+
+<section class="primary_bar">
+<aside class="logo">Instapaper<a href="https://www.instapaper.com/" id="back_to_articles" aria-label="Back to articles"></a></aside>
+<script nonce="">document.getElementById("back_to_articles").addEventListener("click", function() {window.ga('send', 'event', 'read', 'back');});
+</script>
+<div class="control_bar_right_buttons">
+
+
+
+<a class="js_speed_read control_bar_item action_link " title="Speed Read" data-modal="speed_read_limit_modal" href="https://www.instapaper.com/speed_read/1612016219" aria-label="Speed Read">
+<i class="js_tooltip ipicon ipicon-speed" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Speed Read"></i>
+</a>
+
+
+<a class="js_popover js_read_options_popover control_bar_item control_bar_item_last" data-target="#read_options_menu" data-bodystate="read_options_popover" data-placement="bottom" title="" href="javascript:void(0);" aria-hidden="true" data-original-title="Font Settings">
+<i class="js_tooltip ipicon ipicon-textsize" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Font Settings"></i></a>
+
+
+
+<a class="js_star_toggle control_bar_item action_link " title="Like" href="https://www.instapaper.com/star_toggle/1612016219?form_key=LEHWKUCf90jp2O6yMSek" aria-label="Like">
+<i class="js_tooltip ipicon ipicon-liked-off" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Like"></i>
+</a>
+
+
+<a class="js_popover js_move_single_popover control_bar_item needsclick" data-target="#move_menu" data-bodystate="move_single_popover" data-placement="bottom" title="" href="javascript:void(0);" aria-label="Move to Folder" data-original-title="Move To Folder">
+<i class="js_tooltip ipicon ipicon-folder" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Move To Folder"></i></a>
+
+
+<a class="js_archive_single control_bar_item control_bar_item_first" data-article-id="1612016219" data-post-redirect="/u" title="Archive" href="https://www.instapaper.com/skip/1612016219" aria-label="Archive">
+<i class="js_tooltip ipicon ipicon-archive" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Archive"></i>
+</a>
+
+<a class="js_delete_single control_bar_item action_link" data-article-id="1612016219" data-post-redirect="/u" title="Delete" href="https://www.instapaper.com/delete/1612016219" aria-label="Delete">
+<span class="js_tooltip ipicon ipicon-delete" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Delete"></span>
+</a>
+
+<a class="js_close control_bar_item action_close hidden" href="https://www.instapaper.com/read/1612016219" title="Close">
+<span class="js_tooltip ipicon ipicon-close" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Close"></span>
+</a>
+
+
+
+<a class="js_popover js_share_popover control_bar_item hidden-xs" data-target="#share_menu" data-bodystate="read_share_popover" data-placement="bottom" href="javascript:void(0);" aria-label="Share" data-original-title="" title=""><i class="js_tooltip ipicon ipicon-share" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share"></i>
+</a>
+
+<div id="move_menu" class="popover_menu_wrapper">
+<div class="move_popover popover_menu">
+<header class="menu_group_name">MOVE</header>
+
+<a class="js_move_single menu_item menu_item_folder " data-folder-id="0" data-article-id="1612016219" href="https://www.instapaper.com/move/1612016219/to/0">
+<span class="ipicon ipicon-home"></span> Home
+</a>
+
+<a class="js_move_single menu_item menu_item_folder active" data-article-id="1612016219" data-folder-id="4058935" href="https://www.instapaper.com/move/1612016219/to/4058935">
+
+<span class="ipicon ipicon-folder"></span>
+Programador
+</a>
+
+<a class="js_move_single menu_item menu_item_folder " data-article-id="1612016219" data-folder-id="4058936" href="https://www.instapaper.com/move/1612016219/to/4058936">
+
+<span class="ipicon ipicon-folder"></span>
+Donde ir
+</a>
+
+<a class="js_move_single menu_item menu_item_folder " data-article-id="1612016219" data-folder-id="4058937" href="https://www.instapaper.com/move/1612016219/to/4058937">
+
+<span class="ipicon ipicon-folder"></span>
+Carreras
+</a>
+
+<a class="js_move_single menu_item menu_item_folder " data-article-id="1612016219" data-folder-id="4059088" href="https://www.instapaper.com/move/1612016219/to/4059088">
+
+<span class="ipicon ipicon-folder"></span>
+Tutoriales/Consejo
+</a>
+
+<a class="js_move_single menu_item menu_item_folder " data-article-id="1612016219" data-folder-id="4178016" href="https://www.instapaper.com/move/1612016219/to/4178016">
+
+<span class="ipicon ipicon-folder"></span>
+Excel-tutos
+</a>
+
+
+</div>
+</div>
+
+<div id="read_options_menu" class="popover_menu_wrapper">
+<div class="read_options_popover popover_menu">
+
+<div class="read_option_group read_option_color">
+<ul>
+<li class="js_swatch swatch swatch_light active" data-color-mode="lightmode">
+<div></div>
+</li>
+<li class="js_swatch swatch swatch_sepia " data-color-mode="sepiamode">
+<div></div>
+</li>
+<li class="js_swatch swatch swatch_storm " data-color-mode="stormmode">
+<div></div>
+</li>
+<li class="js_swatch swatch swatch_dark " data-color-mode="darkmode">
+<div></div>
+</li>
+</ul>
+</div>
+
+<div class="read_option_group read_option_fonts">
+<ul class="font_choices">
+<li id="lyon_choice" class="js_font_choice font_choice" data-choice="lyon_mode">Lyon</li>
+<li id="tisa_choice" class="js_font_choice font_choice" data-choice="tisa_mode">Tisa</li>
+<li id="helvetica_choice" class="js_font_choice font_choice" data-choice="helvetica_mode">Helvetica</li>
+<li id="georgia_choice" class="js_font_choice font_choice" data-choice="georgia_mode">Georgia</li>
+</ul>
+</div>
+
+<div class="read_option_group read_option_step_size">
+<ul class="rocker">
+<li class="js_font_size_rocker" data-direction="-1"><span class="ipicon ipicon-view-options-textsize-a"></span></li>
+<li class="js_font_size_rocker" data-direction="1"><span class="ipicon ipicon-view-options-textsize-b"></span></li>
+</ul>
+</div>
+
+<div class="read_option_group read_option_step_size read_option_margin">
+<ul class="rocker">
+<li class="js_margin_size_rocker" data-direction="-1"><span class="ipicon ipicon-view-options-width-a"></span></li>
+<li class="js_margin_size_rocker" data-direction="1"><span class="ipicon ipicon-view-options-width-b"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="share_menu" class="popover_menu_wrapper">
+<div class="share_popover popover_menu">
+<header class="menu_group_name">Share</header>
+<a class="menu_item" id="shareToEmail" href="mailto:?subject=Crear%20archivos%20en%20CMD&amp;body=Crear%20archivos%20en%20CMD%0Ahttps%3A%2F%2Fwww.abrirllave.com%2Fcmd%2Fcrear-archivos.php%0A%0A(via%20Instapaper)" aria-label="Email Article">
+Email
+</a>
+
+
+
+
+<!-- Currently evernote share only works for save links so donot show it on texst page -->
+
+
+
+</div>
+</div>
+
+
+<div id="evernote_share_menu" class="popover_menu_wrapper">
+<div class="evernote_share_menu popover_menu">
+<form class="share_to_evernote_form" action="/user/share_to_evernote" method="post">
+<input id="form_key" name="form_key" type="hidden" value="LEHWKUCf90jp2O6yMSek">
+<input type="hidden" name="bookmark_id" id="share_evernote_bookmark_id" value="1612016219">
+<div class="small_form_line group">
+<label for="share_evernote_title">Title:</label>
+<input type="text" class="text" id="share_evernote_title" name="title" value="Crear archivos en CMD">
+</div>
+<div class="small_form_line group">
+<label for="share_evernote_tags">Tags:</label>
+<input type="text" class="text" id="share_evernote_tags" name="tags" placeholder="(optional, comma-separated, must already exist in Evernote)">
+</div>
+<div class="small_form_line group">
+<label for="share_evernote_notebook">Notebook:</label>
+<input type="text" class="text" id="share_evernote_notebook" name="notebook" placeholder="(optional, must already exist in Evernote)">
+</div>
+<div class="small_form_line group">
+<input type="submit" id="share_to_evernote_submit_button" class="submit" value="Post to Evernote">
+<a href="javascript:void(0);" class="cancel_box">cancel</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Article Title / Metadata overlay that shows up on scroll -->
+<aside id="left_context_metadata" class="js_control_bar_recall left_context_metadata" aria-hidden="true">
+<div class="metadata">
+<header>Crear archivos en CMD</header>
+
+<div class="source">
+<div class="site_name">
+<a class="original" href="https://www.abrirllave.com/cmd/crear-archivos.php">abrirllave.com</a>
+</div>
+
+</div>
+
+
+<time class="meta_read_time" aria-hidden="true">1 min</time>
+
+</div>
+
+</aside>
+</section>
+<section id="swap_logo_capital" class="js_control_bar_recall swap_logo_capital">
+<aside class="logo_capital"></aside>
+</section>
+<section id="recall_indicator" class="recall_indicator">
+<a href="javascript:void(0);" class="js_control_bar_recall">
+<span class="ipicon ipicon-ellipsis"></span>
+</a>
+</section>
+</nav>
+
+</div>
+</div>
+<div class="container read_content_container">
+<main class="main" aria-label="Article">
+
+<div id="titlebar" class="titlebar">
+<h1>Crear archivos en CMD</h1>
+<span class="origin_line">
+
+<a class="original" href="https://www.abrirllave.com/cmd/crear-archivos.php">abrirllave.com</a>
+
+
+</span>
+
+</div>
+<div id="story" data-id="1612016219" data-words="157" class="story">
+<article>
+		
+			<aside>
+			
+	</aside>            <p>Para crear un archivo de texto en CMD se puede utilizar el comando <span>COPY</span>. Otra posibilidad es usar el <em>Bloc de notas</em>.</p>
+            <h2>Crear archivos de texto con el comando <span>COPY</span></h2>
+            <p>Estando ubicados en el directorio <span>C:\Users\carlos\pruebas</span> para crear un archivo de texto llamado <strong>archivo1.txt</strong>, se puede escribir:</p>
+            <code><pre><span>COPY CON archivo1.txt</span></pre></code>
+            <p>A continuación, será posible añadir el contenido de dicho archivo, y pulsando la combinación de teclas <strong><em>Ctrl+Z</em></strong> se finalizará. En la siguiente imagen se ilustra la creación del <strong>archivo1.txt</strong> con la línea de contenido:</p>
+            <code><pre><span>Texto de prueba.</span></pre></code>
+            <img src="Crear%20archivos%20en%20CMD_files/crear-archivo-utilizando-copy-con.gif">
+            <p>Obsérvese que, con el comando <span>DIR</span> se puede comprobar que <strong>archivo1.txt</strong> ha sido creado.</p>
+            <h2>Crear archivos de texto con el <em>Bloc de notas</em></h2>
+            <p>Suponiendo que con el <em>Bloc de notas</em> de <em>Windows</em> se cree un archivo de texto llamado <strong>archivo2.txt</strong> con el siguiente contenido:</p>
+            <img src="Crear%20archivos%20en%20CMD_files/crear-archivo-con-bloc-de-notas.gif">
+            <p>Si dicho archivo es guardado en <span>C:\Users\carlos\pruebas</span>, al ejecutar la orden <span>DIR</span> en CMD se puede comprobar la creación de dicho archivo:</p>
+            <img src="Crear%20archivos%20en%20CMD_files/ver-archivo1-y-archivo2.gif">
+	</article>
+	
+</div>
+<footer id="footer" class="footer">
+<span class="origin_line">
+
+<a class="original" href="https://www.abrirllave.com/cmd/crear-archivos.php">abrirllave.com</a>
+
+
+</span>
+</footer>
+<!-- ### Parser
+Instaparser
+-->
+</main>
+</div>
+<!-- Modals -->
+<div id="modal_backer" class="modal_backer"></div>
+
+
+<div id="speedTimeRemaining" class="speed_time_remaining container read_content_container speed_controls_ui"></div>
+<div id="speedRead" class="landing_constrained container-fluid size2mode speed_read" data-timesaved="None" data-remaining="10" style="display:none">
+<div id="speedReadProgress" class="progress_bar speed_controls_ui" style="top:-70px"></div>
+<div id="speedWordContainer" class="single-word speed_playmode_ui visible">&nbsp;</div>
+<div id="speedScrollerContainer" class="scroller-wrapper speed_controls_ui">
+<div id="speedScroller" class="scroller">
+
+<span id="speedWord-0">Para&nbsp;</span><span id="speedWord-1">crear&nbsp;</span><span id="speedWord-2">un&nbsp;</span><span id="speedWord-3">archivo&nbsp;</span><span id="speedWord-4">de&nbsp;</span><span id="speedWord-5">texto&nbsp;</span><span id="speedWord-6">en&nbsp;</span><span id="speedWord-7">CMD&nbsp;</span><span id="speedWord-8">se&nbsp;</span><span id="speedWord-9">puede&nbsp;</span><span id="speedWord-10">utilizar&nbsp;</span><span id="speedWord-11">el&nbsp;</span><span id="speedWord-12">comando&nbsp;</span><span id="speedWord-13">COPY&nbsp;</span><span id="speedWord-14">.&nbsp;</span><span id="speedWord-15">Otra&nbsp;</span><span id="speedWord-16">posibilidad&nbsp;</span><span id="speedWord-17">es&nbsp;</span><span id="speedWord-18">usar&nbsp;</span><span id="speedWord-19">el&nbsp;</span><span id="speedWord-20">Bloc&nbsp;</span><span id="speedWord-21">de&nbsp;</span><span id="speedWord-22">notas&nbsp;</span><span id="speedWord-23">.&nbsp;</span><span id="speedWord-24">Crear&nbsp;</span><span id="speedWord-25">archivos&nbsp;</span><span id="speedWord-26">de&nbsp;</span><span id="speedWord-27">texto&nbsp;</span><span id="speedWord-28">con&nbsp;</span><span id="speedWord-29">el&nbsp;</span><span id="speedWord-30">comando&nbsp;</span><span id="speedWord-31">COPY&nbsp;</span><span id="speedWord-32">Estando&nbsp;</span><span id="speedWord-33">ubicados&nbsp;</span><span id="speedWord-34">en&nbsp;</span><span id="speedWord-35">el&nbsp;</span><span id="speedWord-36">directorio&nbsp;</span><span id="speedWord-37">C:&nbsp;</span><span id="speedWord-38">Users&nbsp;</span><span id="speedWord-39">carlos&nbsp;</span><span id="speedWord-40">pruebas&nbsp;</span><span id="speedWord-41">para&nbsp;</span><span id="speedWord-42">crear&nbsp;</span><span id="speedWord-43">un&nbsp;</span><span id="speedWord-44">archivo&nbsp;</span><span id="speedWord-45">de&nbsp;</span><span id="speedWord-46">texto&nbsp;</span><span id="speedWord-47">llamado&nbsp;</span><span id="speedWord-48">archivo1.txt&nbsp;</span><span id="speedWord-49">,&nbsp;</span><span id="speedWord-50">se&nbsp;</span><span id="speedWord-51">puede&nbsp;</span><span id="speedWord-52">escribir:&nbsp;</span><span id="speedWord-53">COPY&nbsp;</span><span id="speedWord-54">CON&nbsp;</span><span id="speedWord-55">archivo1.txt&nbsp;</span><span id="speedWord-56">A&nbsp;</span><span id="speedWord-57">continuación,&nbsp;</span><span id="speedWord-58">será&nbsp;</span><span id="speedWord-59">posible&nbsp;</span><span id="speedWord-60">añadir&nbsp;</span><span id="speedWord-61">el&nbsp;</span><span id="speedWord-62">contenido&nbsp;</span><span id="speedWord-63">de&nbsp;</span><span id="speedWord-64">dicho&nbsp;</span><span id="speedWord-65">archivo,&nbsp;</span><span id="speedWord-66">y&nbsp;</span><span id="speedWord-67">pulsando&nbsp;</span><span id="speedWord-68">la&nbsp;</span><span id="speedWord-69">combinación&nbsp;</span><span id="speedWord-70">de&nbsp;</span><span id="speedWord-71">teclas&nbsp;</span><span id="speedWord-72">Ctrl+Z&nbsp;</span><span id="speedWord-73">se&nbsp;</span><span id="speedWord-74">finalizará.&nbsp;</span><span id="speedWord-75">En&nbsp;</span><span id="speedWord-76">la&nbsp;</span><span id="speedWord-77">siguiente&nbsp;</span><span id="speedWord-78">imagen&nbsp;</span><span id="speedWord-79">se&nbsp;</span><span id="speedWord-80">ilustra&nbsp;</span><span id="speedWord-81">la&nbsp;</span><span id="speedWord-82">creación&nbsp;</span><span id="speedWord-83">del&nbsp;</span><span id="speedWord-84">archivo1.txt&nbsp;</span><span id="speedWord-85">con&nbsp;</span><span id="speedWord-86">la&nbsp;</span><span id="speedWord-87">línea&nbsp;</span><span id="speedWord-88">de&nbsp;</span><span id="speedWord-89">contenido:&nbsp;</span><span id="speedWord-90">Texto&nbsp;</span><span id="speedWord-91">de&nbsp;</span><span id="speedWord-92">prueba.&nbsp;</span><span id="speedWord-93">Obsérvese&nbsp;</span><span id="speedWord-94">que,&nbsp;</span><span id="speedWord-95">con&nbsp;</span><span id="speedWord-96">el&nbsp;</span><span id="speedWord-97">comando&nbsp;</span><span id="speedWord-98">DIR&nbsp;</span><span id="speedWord-99">se&nbsp;</span><span id="speedWord-100">puede&nbsp;</span><span id="speedWord-101">comprobar&nbsp;</span><span id="speedWord-102">que&nbsp;</span><span id="speedWord-103">archivo1.txt&nbsp;</span><span id="speedWord-104">ha&nbsp;</span><span id="speedWord-105">sido&nbsp;</span><span id="speedWord-106">creado.&nbsp;</span><span id="speedWord-107">Crear&nbsp;</span><span id="speedWord-108">archivos&nbsp;</span><span id="speedWord-109">de&nbsp;</span><span id="speedWord-110">texto&nbsp;</span><span id="speedWord-111">con&nbsp;</span><span id="speedWord-112">el&nbsp;</span><span id="speedWord-113">Bloc&nbsp;</span><span id="speedWord-114">de&nbsp;</span><span id="speedWord-115">notas&nbsp;</span><span id="speedWord-116">Suponiendo&nbsp;</span><span id="speedWord-117">que&nbsp;</span><span id="speedWord-118">con&nbsp;</span><span id="speedWord-119">el&nbsp;</span><span id="speedWord-120">Bloc&nbsp;</span><span id="speedWord-121">de&nbsp;</span><span id="speedWord-122">notas&nbsp;</span><span id="speedWord-123">de&nbsp;</span><span id="speedWord-124">Windows&nbsp;</span><span id="speedWord-125">se&nbsp;</span><span id="speedWord-126">cree&nbsp;</span><span id="speedWord-127">un&nbsp;</span><span id="speedWord-128">archivo&nbsp;</span><span id="speedWord-129">de&nbsp;</span><span id="speedWord-130">texto&nbsp;</span><span id="speedWord-131">llamado&nbsp;</span><span id="speedWord-132">archivo2.txt&nbsp;</span><span id="speedWord-133">con&nbsp;</span><span id="speedWord-134">el&nbsp;</span><span id="speedWord-135">siguiente&nbsp;</span><span id="speedWord-136">contenido:&nbsp;</span><span id="speedWord-137">Si&nbsp;</span><span id="speedWord-138">dicho&nbsp;</span><span id="speedWord-139">archivo&nbsp;</span><span id="speedWord-140">es&nbsp;</span><span id="speedWord-141">guardado&nbsp;</span><span id="speedWord-142">en&nbsp;</span><span id="speedWord-143">C:&nbsp;</span><span id="speedWord-144">Users&nbsp;</span><span id="speedWord-145">carlos&nbsp;</span><span id="speedWord-146">pruebas&nbsp;</span><span id="speedWord-147">,&nbsp;</span><span id="speedWord-148">al&nbsp;</span><span id="speedWord-149">ejecutar&nbsp;</span><span id="speedWord-150">la&nbsp;</span><span id="speedWord-151">orden&nbsp;</span><span id="speedWord-152">DIR&nbsp;</span><span id="speedWord-153">en&nbsp;</span><span id="speedWord-154">CMD&nbsp;</span><span id="speedWord-155">se&nbsp;</span><span id="speedWord-156">puede&nbsp;</span><span id="speedWord-157">comprobar&nbsp;</span><span id="speedWord-158">la&nbsp;</span><span id="speedWord-159">creación&nbsp;</span><span id="speedWord-160">de&nbsp;</span><span id="speedWord-161">dicho&nbsp;</span><span id="speedWord-162">archivo:&nbsp;</span>
+<span id="speedWord-163">◆</span>
+
+</div>
+<div id="speedFadeoutLeft" class="fade_left"></div>
+<div class="fade_right"></div>
+</div>
+<div id="speedRuler" style="visibility: hidden" class="scroller">
+
+Para crear un archivo de texto en CMD se puede utilizar el comando COPY .
+ Otra posibilidad es usar el Bloc de notas . Crear archivos de texto con
+ el comando COPY Estando ubicados en el directorio C: Users carlos 
+pruebas para crear un archivo de texto llamado archivo1.txt , se puede 
+escribir: COPY CON archivo1.txt A continuación, será posible añadir el 
+contenido de dicho archivo, y pulsando la combinación de teclas Ctrl+Z 
+se finalizará. En la siguiente imagen se ilustra la creación del 
+archivo1.txt con la línea de contenido: Texto de prueba. Obsérvese que, 
+con el comando DIR se puede comprobar que archivo1.txt ha sido creado. 
+Crear archivos de texto con el Bloc de notas Suponiendo que con el Bloc 
+de notas de Windows se cree un archivo de texto llamado archivo2.txt con
+ el siguiente contenido: Si dicho archivo es guardado en C: Users carlos
+ pruebas , al ejecutar la orden DIR en CMD se puede comprobar la 
+creación de dicho archivo: ◆
+
+</div>
+<div class="wpm-container speed_controls_ui">
+<div id="wpmLabel" class="wpm-label">350 words per minute</div>
+<div class="wpm-control">
+<div class="wpm-icon ipicon ipicon-slower"></div>
+<input type="range" class="wpm-slider" id="wpmControl" min="250" value="350" max="650" step="10">
+<div class="wpm-icon ipicon ipicon-faster"></div>
+</div>
+</div>
+<div id="speedEndState" class="speed_endstate_ui" style="display: none">
+<div class="premium_bar" id="speedPremiumBar">
+You have <span id="speedArticlesLeft"></span> articles left this month. Get unlimited speed reading and more with <a href="https://www.instapaper.com/premium">Instapaper Premium</a>!
+</div>
+<div class="clearfix">
+<div class="col-md-4 col-sm-4 row-same-height speed-stats ">
+<div>
+<img class="stats-img" src="Crear%20archivos%20en%20CMD_files/endstate_words.png"><br>
+<span id="speedWordsRead"></span> Words Read
+</div>
+</div>
+<div class="col-md-4 col-sm-4 row-same-height speed-stats">
+<div>
+<img class="stats-img" src="Crear%20archivos%20en%20CMD_files/endstate_spent.png"><br>
+<span id="speedTimeSpent"></span> Spent
+</div>
+</div>
+<div class="col-md-4 col-sm-4 row-same-height speed-stats">
+<div>
+<img class="stats-img" src="Crear%20archivos%20en%20CMD_files/endstate_time_saved.png"><br>
+<span id="speedTimeSaved"></span> Saved
+<div class="total-saved">Total Time Saved: <span id="speedTotalTimeSaved"></span></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<input id="form_key" name="form_key" type="hidden" value="LEHWKUCf90jp2O6yMSek">
+
+<div id="highlight_create_popover" class="highlight_popover clearfix">
+<a id="highlight_create" class="highlight_button highlight_left_button">
+<span class="ipicon ipicon-highlights-dark"></span>
+</a>
+<a id="note_create" class="highlight_button highlight_right_button">
+<span class="ipicon ipicon-note-create"></span>
+</a>
+<div class="highlight_arrow"></div>
+</div>
+<div id="highlight_delete_popover" class="highlight_popover">
+<a class="highlight_button highlight_left_button highlight_right_button">
+<span class="ipicon ipicon-delete-dark"></span> Remove Note
+</a>
+<div class="highlight_arrow"></div>
+</div>
+
+
+<a id="highlight_limit_modal_launcher" class="open_modal hidden" data-modal="highlight_limit_modal"></a>
+<div id="highlight_limit_modal" class="modal modal_highlight_limit">
+<div class="modal_name">Upgrade to Premium</div>
+<div class="modal_close js_galog" data-bins="read,subscription_close">✕</div>
+<div class="modal_group">
+<div>Sorry! You've exceeded your limit of 5 free notes per month. Upgrade to Premium for...</div>
+<div class="premium_features clearfix">
+<span class="premium_row">
+<div class="premium_feature clearfix">
+<div class="premium_img premium_img_search"></div>
+<div class="text">
+<div class="title">Full-Text Search</div>
+<div class="description">Search through all of the articles you've saved to Instapaper, even ones you've archived.</div>
+</div>
+</div>
+<div class="premium_feature clearfix">
+<div class="premium_img premium_img_notes"></div>
+<div class="text">
+<div class="title">Unlimited Notes</div>
+<div class="description">Never worry about the 5-note monthly limit again.</div>
+</div>
+</div>
+</span>
+<span class="premium_row">
+<div class="premium_feature clearfix">
+<div class="premium_img premium_img_playlist"></div>
+<div class="text">
+<div class="title">Text-to-Speech Playlists</div>
+<div class="description">
+Create a playlist of saved articles, turn up the volume, and relax. <span class="premium_mobile">(iOS &amp; Android only)</span>
+</div>
+</div>
+</div>
+<div class="premium_feature clearfix">
+<div class="premium_img premium_img_speed"></div>
+<div class="text">
+<div class="title">Speed Reading</div>
+<div class="description">
+Get the full speed reading experience with unlimited usage.
+</div>
+</div>
+</div>
+</span>
+</div>
+
+<div class="group">
+
+<form id="stripe_form" class="stripe_form" action="/stripe/process" method="POST">
+<script nonce="" src="Crear%20archivos%20en%20CMD_files/checkout.js"></script>
+
+<button id="stripe_monthly_button" name="monthly" class="premium_hero_button stripe_monthly_button js_galog" data-bins="premium,premium_button">
+<span class="price">$2.99</span> per month
+</button>
+<button id="stripe_yearly_button" name="yearly" class="premium_hero_button stripe_yearly_button js_galog" data-bins="premium,premium_button">
+<span class="price">$29.99</span> per year
+</button>
+
+<script nonce="" type="text/javascript">
+$('.stripe_monthly_button').unbind().click(function(){
+var token = function(res){
+var $monthly = $('<input type=hidden name=monthly />').val('1');
+$('#stripe_form').append($monthly)
+var $input = $('<input type=hidden name=stripeToken />').val(res.id);
+$('#stripe_form').append($input).submit();
+};
+StripeCheckout.open({
+key: "pk_live_gPvYgUPWeaqkdudBAxwa3lyN",
+email: "ing.nequiz@gmail.com",
+amount: "299",
+name: "Instapaper Premium",
+
+description: "Monthly Plan",
+
+image: "https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/insta_logo_med.png?v=80a76b40257eb61e280a58d44e172ad4",
+token: token,
+
+});
+return false;
+});
+
+$('.stripe_yearly_button').unbind().click(function() {
+var token = function(res){
+var $yearly = $('<input type=hidden name=yearly />').val('1');
+$('#stripe_form').append($yearly)
+var $input = $('<input type=hidden name=stripeToken />').val(res.id);
+$('#stripe_form').append($input).submit();
+};
+StripeCheckout.open({
+key: "pk_live_gPvYgUPWeaqkdudBAxwa3lyN",
+email: "ing.nequiz@gmail.com",
+amount: "2999",
+name: "Instapaper Premium",
+description: "Yearly Plan",
+image: "https://staticinstapaper.s3.dualstack.us-west-2.amazonaws.com/img/insta_logo_med.png?v=80a76b40257eb61e280a58d44e172ad4",
+token: token
+});
+return false;
+});
+
+</script>
+</form>
+
+</div>
+</div>
+</div>
+
+
+<script nonce="" type="text/javascript">
+window.text_only = false;
+window.is_subscriber = false;
+window.highlights_this_month = false;
+window.highlights_monthly_limit = 5;
+window.initial_scroll_position = false;
+window.initial_highlight_id = false;
+window.applyHighlights = false;
+var body_height = $('body').outerHeight();
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43497209-1', 'instapaper.com');
+ga('send', 'pageview');
+</script>
+
+
+</body></html>

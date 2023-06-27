@@ -1,0 +1,1 @@
+ezoicSiteSpeed(jQuery,String(/documentReady/).substring(1).slice(0,-1),String(/jQuery-document-ready/).substring(1).slice(0,-1),function(){jQuery.each(wpml_cookies,function(cookieName,cookieData){document.cookie=cookieName+'='+cookieData.value+';expires='+cookieData.expires+'; path='+cookieData.path});});
