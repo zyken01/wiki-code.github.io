@@ -32,8 +32,6 @@ Wikipedia describes them as
 - If used in a correct place in a correct manner, they can prove to be a savior or else they can result in a horrible mess of a code.
 
 
-
-
 ## 🐢 Before you start
 
 - All design patterns have been implemented in [ES6](https://github.com/lukehoban/es6features), the new version of javascript.
@@ -79,11 +77,9 @@ Wikipedia says
 First of all we have a door interface and the implementation
 ```js
 /*
-Door
-
-getWidth()
-getHeight()
-
+    Door
+    getWidth()
+    getHeight()
 */
 
 class WoodenDoor {
@@ -571,9 +567,9 @@ First we have an interface `Lion` that all types of lions have to implement
 
 ```js
 /*
-Lion interface :
+    Lion interface :
 
-roar()
+    roar()
 */
 
 class AfricanLion  {
