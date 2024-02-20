@@ -52,8 +52,11 @@ git checkout <nombre-de-la-rama>
 git pull <nombre-remoto>
 
 # Antes de fusionar, debes actualizar tu rama dev local:
+# Fusiona los cambios de la otra rama en la rama actual utilizando git merge.
 git fetch
 git merge <nombre-de-la-rama>
+git commit -m "Mensaje de fusión"  #Resuelve cualquier conflicto de fusión si los hay y realiza el commit.
+
 
 # ==================
 #  Para descartar todos los cambios
