@@ -4,7 +4,13 @@
  * 
  * @author (your name) 
  * @version (a version number or a date)
- */
+  En este caso, el método equals() compara el contenido de cadena1 con el contenido de cadena2,
+  y como son iguales, el resultado será "Las cadenas son iguales."
+  Es importante mencionar que en Java, 
+  cuando se comparan cadenas, es preferible usar equals() en lugar del operador ==,
+  ya que equals() compara el contenido de las cadenas,
+  mientras que == compara las referencias de los objetos.
+*/
 
 import java.util.Scanner;
    
@@ -50,8 +56,8 @@ public class EjemplosIF
          
         System.out.print("Ingresa un texto el que sea: ");
         String texto = scanner.nextLine();
-        if(nombre.equals("hola mundo")){
-            System.out.println("El texto ingresado es le correcto:");
+        if(texto.equals("hola mundo")){
+            System.out.println("El texto ingresado es el correcto:");
         }else{
              System.out.println("Debiste Ingresar hola mundo");
         }
