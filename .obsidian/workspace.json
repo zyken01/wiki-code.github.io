@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "7aa3f4a5dc8483b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6a0563dc0f17068",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be1e4927047cb131",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "45e30d6609b2472e",
+    "type": "split",
+    "children": [
+      {
+        "id": "af8a68463bcf11ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4cc38312ce00f93",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "58dc49ada2c41e39",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "380ec8ded10b91cc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 220.5
+  },
+  "right": {
+    "id": "9e3b2e9cdcef594e",
+    "type": "split",
+    "children": [
+      {
+        "id": "38774572f08e176f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "469609f838272d08",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d795f74df66e6c68",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "03204ca55c62b1e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a0395ddb4fffb215",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f4cc38312ce00f93",
+  "lastOpenFiles": [
+    "Untitled",
+    "2024-03-07.md",
+    "Git/00_Git_Indice.md",
+    "Git/Untitled.canvas",
+    "Git/Untitled 1.canvas",
+    "git stash Cómo guardar los cambios Atlassian Git Tutorial_files/05.svg.md",
+    "Git/Guía Markdown de Obsidian.md",
+    "Git/Guía de estílo para Commits y Documentación.md",
+    "Git/Buenas prácticas.md",
+    "Untitled.canvas",
+    "Markdown/NppMarkdownPanel-master/NppMarkdownPanel/Resources/nppMdP.tests/Test-MD.md",
+    "git stash Cómo guardar los cambios Atlassian Git Tutorial_files"
+  ]
+}
