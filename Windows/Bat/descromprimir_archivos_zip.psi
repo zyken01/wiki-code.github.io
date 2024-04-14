@@ -1,23 +1,22 @@
-@echo off
-rem EJCUTAR COMO POWERSHELL
+#Ejecutar solo con power shell
 
-setlocal enabledelayedexpansion
+# Obtiene la ruta del directorio actual
+$directorioActual = Get-Location
 
-rem Establece el directorio actual como punto de partida
-set "startDir=%cd%"
+# Recorre todos los archivos .zip en los subdirectorios del directorio actual
+Get-ChildItem -Path $directorioActual -Recurse -Filter *.zip | ForEach-Object {
+    # Obtiene la ruta completa del archivo zip
+    $archivoZip = $_.FullName
+    
+    # Obtiene el nombre del archivo sin extensión
+    $nombreArchivo = $_.BaseName
 
-rem Función para descomprimir archivos .zip
-:unzip
-set "zipFile=%~1"
-set "extractDir=%~dp1%~n1\"
-if not exist "!extractDir!" mkdir "!extractDir!"
-powershell Expand-Archive -Path "!zipFile!" -DestinationPath "!extractDir!"
+    # Obtiene la ruta del directorio donde se encuentra el archivo zip
+    $directorioDestino = $_.DirectoryName
 
-rem Bucle para buscar archivos .zip en el directorio actual
-for %%F in (*.zip) do (
-    call :unzip "%%F"
-)
+    # Crea un subdirectorio con el nombre del archivo sin extensión
+    $directorioDestinoArchivo = Join-Path -Path $directorioDestino -ChildPath $nombreArchivo
 
-echo Descompresión completada.
-pause
-exit /b
+    # Descomprime el archivo zip en el subdirectorio recién creado
+    Expand-Archive -Path $archivoZip -DestinationPath $directorioDestinoArchivo -Force
+}
