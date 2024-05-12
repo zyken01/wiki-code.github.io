@@ -1,0 +1,54 @@
+@echo off
+:menu
+cls
+echo ------------------------------
+echo           MENU
+echo ------------------------------
+echo 1. Convertir nombres a Mayúsculas
+echo 2. Mover archivos PDF a "concentrado_PDF"
+echo 3. Mostrar "Hola Mundo"
+echo 4. Salir
+echo ------------------------------
+
+set /p opcion="Ingrese su opción: "
+
+if "%opcion%"=="1" (
+    call :convertirMayusculas
+) else if "%opcion%"=="2" (
+    call :moverPDF
+) else if "%opcion%"=="3" (
+    echo "Hola Mundo"
+) else if "%opcion%"=="4" (
+    exit
+) else (
+    echo Opción no válida. Por favor, seleccione una opción válida.
+    pause
+    goto :menu
+)
+
+goto :menu
+
+:convertirMayusculas
+set /p cadena="Ingrese la cadena de caracteres a buscar en el nombre de archivo: "
+
+for %%f in (*) do (
+    set "nombre=%%~nf"
+    set "extension=%%~xf"
+    set "nuevoNombre=!nombre:%cadena%=!"
+    ren "%%f" "!nuevoNombre!!extension!"
+)
+
+echo Nombres de archivos convertidos a mayúsculas donde se encontró la cadena "%cadena%".
+pause
+goto :eof
+
+:moverPDF
+if not exist "%cd%\concentrado_PDF" mkdir "%cd%\concentrado_PDF"
+
+for /r %%f in (*.pdf) do (
+    move "%%f" "%cd%\concentrado_PDF\"
+)
+
+echo Archivos PDF movidos a la carpeta "concentrado_PDF".
+pause
+goto :eof
