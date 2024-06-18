@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 
 REM Mostrar mensaje inicial
 echo =========================================
-echo Verificando y desmontando unidades de red si están ocupadas...
+echo Verificando y desmontando unidades de red si estan ocupadas...
 echo =========================================
 
 REM Iterar sobre las unidades definidas
@@ -13,10 +13,10 @@ set "unidades=Z Y X"
 for %%u in (%unidades%) do (
     set "unidad=%%u:"
     
-    REM Verificar si la unidad está conectada
+    REM Verificar si la unidad esta conectada
     net use !unidad! >nul 2>&1
     if !errorlevel! equ 0 (
-        echo La unidad !unidad! está conectada. Intentando desmontar...
+        echo La unidad !unidad! esta conectada. Intentando desmontar...
         net use !unidad! /delete /yes >nul 2>&1
         if !errorlevel! equ 0 (
             echo La unidad !unidad! se desmonto correctamente.
@@ -33,15 +33,18 @@ for %%u in (%unidades%) do (
 pause
 CLS
 
+rem Desactivar la expansión retardada si está activada
+setlocal DisableDelayedExpansion
+
 REM Conexion a la primera unidad de red
 echo =========================================
 echo Conectando a la primera unidad de red...
 echo =========================================
-set "user1=.\sg"
-set "pass1=CV@2022!"
-set "carpeta_compartida1=\\MX16656\Documents"
+set "userTfca=.\sg"
+set "password=CV@2022!"
+set "carpeta_compartida3=\\MX16656\Documents"
 
-net use Z: %carpeta_compartida1% %pass1% /user:%user1%
+net use Z: %carpeta_compartida3% "%password%" /user:"%userTfca%"
 
 if %errorlevel% neq 0 (
     echo [Error!]: No se pudo conectar a la primera unidad de red.
@@ -81,8 +84,8 @@ if %errorlevel% neq 0 (
     echo Error: No se pudo conectar a la tercera unidad de red.
     echo Por favor, verifica las credenciales.
 ) else (
-    REM Conexion exitosa a la red.
-    echo Bienvenido %user3%
+    echo Conexion exitosa.
+    REM Bienvenido %user3%
 )
 
 timeout /t 5 >nul
