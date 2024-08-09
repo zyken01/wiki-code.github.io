@@ -43,7 +43,6 @@ git commit -m "create page 4"
 
 # Opciones para hacer Push de tus cambios
 git push <nombre-remoto> <nombre-de-tu-rama>
--- 
 git push -u origin <nombre-de-tu-rama>
 
 # ==================
@@ -56,6 +55,7 @@ git pull <nombre-remoto>
 git fetch
 git merge <nombre-de-la-rama>
 git commit -m "Mensaje de fusión"  #Resuelve cualquier conflicto de fusión si los hay y realiza el commit.
+git push
 
 
 # ==================

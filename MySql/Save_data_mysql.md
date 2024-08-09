@@ -11,12 +11,11 @@
 -- mysql.exe -h 10.2.147.110 -u USR_NEQUIZ -p
 
 
-
+-- ================================================
 Paso 2: Usar el comando mysqldump
 El comando mysqldump es el que se utiliza para exportar bases de datos MySQL. Aquí tienes la estructura básica del comando:
 
-bash
-Copiar código
+
 mysqldump -u [nombre_usuario] -p [nombre_base_datos] > [archivo_destino].sql
 [nombre_usuario]: Es el nombre de usuario de MySQL.
 [nombre_base_datos]: Es el nombre de la base de datos que deseas exportar.
