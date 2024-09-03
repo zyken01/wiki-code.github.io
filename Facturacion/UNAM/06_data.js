@@ -14,9 +14,13 @@ $( "#135textbox61").val("04510");
 // Régimen Fiscal*:
 $( "#135textboxautocomplete62").val("Personas Morales con Fines no Lucrativos");
 
+//Uso de CFDI
+$( "#135textboxautocomplete66").val("Gastos en general.");
+
 // =====================================
 // Descripción Detallada
-$( "#135textboxautocomplete113" ).val("ACTIVIDAD: IMPARTICIÓN DE CURSO:MÓDULO DE WORD (INTERMEDIO) . SECRETARÍA DE EDUCACIÓN PÚBLICA .CURSO EN LÍNEA. GRUPO F 170557 PERIODO DEL 29 de Abril del 2024 AL 24 de Mayo del 2024");
+$( "#135textboxautocomplete113" ).val("ACTIVIDAD: INTEGRAR Y ASEGURAR EL CUMPLIMIENTO DE LAS ESPECIFICACIONES TÉCNICAS DE LOS SERVICIOS ACADÉMICOS, EN MODALIDAD EN LÍNEA, ASÍ COMO REALIZAR ACLARACIONES A USUARIOS, PARA EL SISTEMA DE DESARROLLO PROFESIONAL DE CARRERA DE LA SEP. PERIODO DEL 01 de Julio del 2024 AL 31 de Julio del 2024");
+
 
 
 
@@ -32,3 +36,13 @@ $( "#135textbox119").val("4800");
 // =====================================
 // Objeto de Impuesto*  -- sI OBJETO DE IMPUESTO
 $('#135select115 option:contains("Sí objeto de impuesto.")').prop('selected', true);
+
+
+
+// =====================================
+// Montos
+// IVA
+$( "#135textboxautocomplete169").val("10.67");
+//ISR
+$( "#135textboxautocomplete179").val("10");
+
