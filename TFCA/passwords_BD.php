@@ -10,8 +10,8 @@ pnequizm
 =================================
 
 private $host = '10.2.147.110'; // localhost
-private $user = 'USR_NEQUIZ'; 
-private $password = 'N3@u1z'; 
+private $user = 'USR_NEQUIZ';
+private $password = 'N3@u1z';
 private $dataBase = 'DB_TFCA_SII_DEV';
 private $port = 3306;
 
